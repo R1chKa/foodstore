@@ -1,0 +1,99 @@
+body {
+  background-color: grey;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+#login-form {
+  margin: 120px auto;
+  width: 400px;
+}
+
+#login-form h2 {
+  background-color: orangered;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  margin: 0;
+}
+
+.fa-home {
+  /* color: #33cc77; */
+  display: block;
+  /* margin: 0 auto; */
+  padding: 0;
+  cursor: pointer;
+  float: right;
+}
+
+#login-form fieldset {
+  background-color: #fff;
+  -webkit-margin-start: 0;
+  border-radius: 0 0 20px 20px;
+  padding: 0 26px 20px 26px;
+  border-width: 0;
+}
+
+#login-form fieldset p {
+  color: #777;
+  margin-bottom: 14px;
+}
+
+#login-form fieldset p:last-child {
+  margin-bottom: 0;
+}
+
+#login-form fieldset input {
+  border-radius: 3px;
+}
+
+#login-form fieldset input[type="login"],
+#login-form fieldset input[type="password"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 328px;
+}
+
+#login-form fieldset .buttons input {
+  background-color: #33cc77;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* #login-form fieldset .buttons input:first-child {
+  float: left;
+}
+
+#login-form fieldset .buttons input:last-child {
+  float: right;
+} */
+
+#login-form fieldset input[value="ЗАРЕЄСТРУВАТИСЯ"] {
+  width: 170px;
+  float: right;
+}
+
+#login-form fieldset input[value="УВІЙТИ"] {
+  width: 120px;
+  float: left;
+}
+
+#login-form fieldset .buttons input:hover {
+  background-color: #28ad63;
+}
