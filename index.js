@@ -2,19 +2,20 @@ goToLink = link => {
   window.location = link;
 };
 
-// var mysql = require("mysql");
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "",
-//   database: "test"
-// });
-
-// connection.connect();
-
-// connection.query("SELECT 1 + 1 AS solution", function(error, results, fields) {
-//   if (error) throw error;
-//   console.log("The solution is: ", results[0].solution);
-// });
-
-// connection.end();
+simpleCart({
+  checkout: {
+    type: "SendForm",
+    url: "../checkout.php"
+    // type: "GoogleCheckout",
+    // marchantID: "XXXXXXXXX"
+  }
+});
+simpleCart.currency({
+  code: "UAH",
+  name: "Ukrainian Hryvnya",
+  symbol: " ₴",
+  delimiter: " ",
+  decimal: ",",
+  after: true,
+  accuracy: 2
+});

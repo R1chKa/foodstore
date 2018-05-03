@@ -1,7 +1,7 @@
 <?php 
 require('../db.php');
 
-if ($_SESSION['logged_user']['role'] == 'user') {
+if ($_SESSION['logged_user']['role'] == 'admin') {
     echo $_SESSION['logged_user']['role'];
 }
 
